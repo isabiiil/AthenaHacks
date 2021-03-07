@@ -1,31 +1,3 @@
-// import React from 'react';
-// import * as eva from '@eva-design/eva';
-// import { ApplicationProvider, Layout, Button } from '@ui-kitten/components';
-// import { default as theme } from './custom-theme.json'; // <-- Import app theme
-
-// export default () => (
-//   <ApplicationProvider {...eva} theme={{ ...eva.dark, ...theme }}>
-//     <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-//       <Button>Log In to Spotify</Button>
-//     </Layout>
-//   </ApplicationProvider>
-// );
-
-// import 'react-native-gesture-handler';
-// import React from 'react';
-// import * as eva from '@eva-design/eva';
-// import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
-// import { AppNavigator } from './navigation.component';
-// import { default as theme } from './custom-theme.json';
-
-// export default () => (
-//   <>
-//     <ApplicationProvider {...eva} theme={{ ...eva.dark, ...theme }}>
-//       <AppNavigator/>
-//     </ApplicationProvider>
-//   </>
-// );
-
 import * as React from 'react';
 import * as eva from '@eva-design/eva';
 import { ApplicationProvider, Layout, Button, Text, Input } from '@ui-kitten/components';
@@ -68,6 +40,7 @@ function Selection() {
           value={value}
           onChangeText={nextValue => setValue(nextValue)}
         />
+        <Button>Submit</Button>
       </Layout>
     </ApplicationProvider>
   );
@@ -75,7 +48,7 @@ function Selection() {
 
 const Stack = createStackNavigator();
 
-function App() {
+export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
@@ -85,5 +58,3 @@ function App() {
     </NavigationContainer>
   );
 }
-
-export default App;
