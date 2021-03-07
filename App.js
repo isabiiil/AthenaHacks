@@ -120,11 +120,11 @@ function detectEmotion({navigation}){
     <ApplicationProvider {...eva} theme={{ ...eva.dark, ...theme }}>
       <Layout style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
 
-      <Button style={{backgroundColor: 'transparent'}} onPress={() => navigation.navigate('Playing Song')}>Loading</Button>
+      <Button style={{backgroundColor: 'transparent'}} onPress={() => navigation.navigate('Playing Song')}>Loading ...</Button>
 
       <Image 
       source={require('./progressbar.png')}
-      style={{ width: 250, height:  250 }}
+      style={{ width: 450, height: 450 }}
       />
       </Layout>
     </ApplicationProvider>
