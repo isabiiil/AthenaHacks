@@ -4,10 +4,9 @@ const SpotifyWebApi = require('spotify-web-api-node');
 
 
 
-var client_id = '34cf4eb736ef4ee3bfb0b75fba0465df'; // Your client id
-var client_secret = '16eb24e721eb48709d54868df85a7214'; // Your secret
-var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
-var your_access_token = "BQCOuUHJo28ltAYS6TT39os-0abb3cfo5JeJia-axSsOTKgbRkUk15xZ-wbWrWXWzDPTJ8VZH3Gj83kHOqNX8svA9jjBoXdALDNO5x-FuZCgoaby9XguQjZRxjIwMorUdoa_1tWzr4Dr9jIzJSnF6oIzhwq1JtIzN3mQHxSy38G-hYTvjQ";
+var client_id = ''; // Your client id
+var client_secret = ''; // Your secret
+var redirect_uri = ''; // Your redirect uri
 const port = "8888"
 
 const app = express();
